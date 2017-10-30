@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Hangman Practice</title>
+	<script type ="text/javascript">
+
+	var guesses = 10;
+	var answers = ["Halloween","Scary","Trick or Treat"];
+	var selectedAnswer = "";
+	var wrongGuesses = [];
+	var underscores = [];
+	var wins = 0;
+	var loses = 0;
+	var solved = false;
+
+	function reset() {
+		guesses = 10;
+		wrongGuesses = [];
+		underscores = [];
+}
+	function randomWord() {
+	var randomNumbers = Math.floor(Math.random() * answers.length);
+		selectedAnswer = answers[randomNumbers].split ("");
+		return selectedAnswer;
+	}
+		
+		console.log (randomWord());
+
+</script>	
+
+</body>
+</html>
